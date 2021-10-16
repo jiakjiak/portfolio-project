@@ -6,15 +6,18 @@
   --heading-font-family: "Playfair Display", serif;
   --regular-font-family: "Raleway", sans-serif;
   --background-image: var(--bs-gradient);
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
   font-family: var(--regular-font-family);
+  color: var(--accent-color);
 }
+
 h1 {
   font-family: var(--heading-font-family);
   font-size: 96px;
+  color: #000;
 }
 .hero p {
   font-weight: bold;
@@ -32,11 +35,66 @@ h1 {
   padding: 120px 20px 40px;
 }
 
-.project-link {
+.project-link,
+.launch-link {
   color: #fff;
   background: var(--accent-color);
   border-radius: 4px;
   padding: 18px 30px;
   line-height: 27px;
   background-image: var(--background-image);
+}
+
+.project-link,
+.launch-link {
+  font-size: 24px;
+}
+.launch-link {
+  position: relative;
+  top: 50px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.box {
+  height: 620px;
+  width: 600px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+}
+
+.box img {
+  width: 500px;
+  height: 360px;
+  border-radius: 10px;
+  margin: 40px 50px 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.box p {
+  line-height: 30px;
+  margin: 0 50px;
+  font-size: 18px;
+}
+
+.launch-link {
+  position: relative;
+}
+
+h2,
+p {
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
 }
