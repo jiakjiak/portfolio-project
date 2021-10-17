@@ -19,6 +19,21 @@ h1 {
   font-size: 96px;
   color: #000;
 }
+
+h2,
+p {
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
 .hero p {
   font-weight: bold;
   font-size: 36px;
@@ -35,6 +50,10 @@ h1 {
   padding: 120px 20px 40px;
 }
 
+.top-offset {
+  margin-top: -30px;
+}
+
 .project-link,
 .launch-link {
   color: #fff;
@@ -43,58 +62,53 @@ h1 {
   padding: 18px 30px;
   line-height: 27px;
   background-image: var(--background-image);
-}
-
-.project-link,
-.launch-link {
   font-size: 24px;
 }
-.launch-link {
-  position: relative;
-  top: 10px;
-}
 
-.wrapper {
-  text-align: center;
-}
-
-.box {
-  height: 600px;
-  width: 520px;
-  border-radius: 10px;
+.card-content {
   border: 1px solid #fff;
-  background-color: #fff;
-  text-align: center;
-}
-
-.box img {
-  width: 450px;
-  height: 360px;
-  border-radius: 10px;
-  margin: 30px auto;
   box-shadow: var(--box-shadow);
+  border-radius: 10px;
 }
 
-.box p {
+.card-content img {
+  margin: 30px auto;
+}
+
+.card-details {
   line-height: 30px;
   margin: 0 50px;
   font-size: 18px;
 }
 
-.top-offset {
-  margin-top: -30px;
-}
-
-h2,
-p {
+.back-to-top {
   color: var(--secondary-color);
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 24px;
+.back-to-top:hover {
+  color: var(--primary-color);
 }
 
-p {
-  font-size: 16px;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+  .project-link,
+  .launch-link {
+    font-size: 16px;
+    padding: 10px 20px;
+    line-height: 25px;
+  }
 }
