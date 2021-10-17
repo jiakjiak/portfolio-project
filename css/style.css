@@ -11,7 +11,7 @@
 
 body {
   font-family: var(--regular-font-family);
-  color: var(--accent-color);
+  background-color: var(--tertiary-color);
 }
 
 h1 {
@@ -51,7 +51,7 @@ h1 {
 }
 .launch-link {
   position: relative;
-  top: 50px;
+  top: 10px;
 }
 
 .wrapper {
@@ -59,19 +59,19 @@ h1 {
 }
 
 .box {
-  height: 620px;
-  width: 600px;
+  height: 600px;
+  width: 520px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   background-color: #fff;
   text-align: center;
 }
 
 .box img {
-  width: 500px;
+  width: 450px;
   height: 360px;
   border-radius: 10px;
-  margin: 40px 50px 10px;
+  margin: 30px auto;
   box-shadow: var(--box-shadow);
 }
 
@@ -81,8 +81,8 @@ h1 {
   font-size: 18px;
 }
 
-.launch-link {
-  position: relative;
+.top-offset {
+  margin-top: -30px;
 }
 
 h2,
