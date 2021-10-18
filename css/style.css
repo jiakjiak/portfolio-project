@@ -138,4 +138,41 @@ p {
     padding: 10px 20px;
     line-height: 25px;
   }
+
+  .heroine,
+  .about-mobile-device {
+    text-align: center;
+  }
+
+  .about-content {
+    margin: auto 50px;
+  }
+
+  .profile-picture {
+    margin-top: 60px;
+  }
+
+  .icons {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .profile-picture {
+    margin-top: 50px;
+  }
+
+  .heroine,
+  .about-mobile-device {
+    text-align: center;
+  }
+  .about-content {
+    margin: auto 50px;
+  }
+
+  .icons {
+    display: block;
+    margin: 20px auto;
+  }
 }
