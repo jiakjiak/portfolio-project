@@ -50,6 +50,11 @@ p {
   padding: 120px 20px 40px;
 }
 
+.heroine {
+  background-color: var(--primary-color);
+  padding: 60px auto;
+}
+
 .top-offset {
   margin-top: -30px;
 }
@@ -92,6 +97,15 @@ p {
 
 .back-to-top:hover {
   color: var(--primary-color);
+}
+
+.name {
+  font-size: 60px;
+  font-family: var(--regular-font-family) !important;
+}
+
+.profile-picture {
+  border-radius: 10px;
 }
 
 @media (max-width: 576px) {
