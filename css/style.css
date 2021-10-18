@@ -34,7 +34,8 @@ p {
   font-size: 16px;
 }
 
-.hero p {
+.hero p,
+.contact-content {
   font-weight: bold;
   font-size: 36px;
   color: var(--secondary-color);
@@ -60,7 +61,8 @@ p {
 }
 
 .project-link,
-.launch-link {
+.launch-link,
+.contact-link {
   color: #fff;
   background: var(--accent-color);
   border-radius: 4px;
@@ -121,16 +123,30 @@ p {
   line-height: 30px;
 }
 
+.contact-content {
+  background-color: var(--primary-color);
+  padding: 100px 50px;
+  border-radius: 10px;
+}
+
+.contact-link {
+  text-decoration: none;
+  display: inline;
+}
+
 @media (max-width: 576px) {
-  h1 {
+  h1,
+  .title {
     font-size: 50px;
+    text-align: center;
   }
   .hero p {
     font-size: 22px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: normal;
   }
   .project-link,
   .launch-link {
@@ -156,6 +172,15 @@ p {
     display: block;
     margin: 20px auto;
   }
+
+  .contact-content {
+    font-size: 20px;
+    margin-top: -70px;
+  }
+}
+
+.contact-icon {
+  font-size: 30px;
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
