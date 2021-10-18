@@ -99,7 +99,7 @@ p {
   color: var(--primary-color);
 }
 
-.name {
+.title {
   font-size: 60px;
   font-family: var(--regular-font-family) !important;
 }
