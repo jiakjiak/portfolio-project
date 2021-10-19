@@ -134,6 +134,44 @@ p {
   display: inline;
 }
 
+.logo {
+  max-width: 75px;
+  max-height: 65px;
+}
+
+.extra-small-logo {
+  max-height: 40px;
+}
+
+.menu-bar {
+  background-color: #fff;
+}
+
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  line-height: 60px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--accent-color);
+}
 @media (max-width: 576px) {
   h1,
   .title {
@@ -147,6 +185,11 @@ p {
   h2 {
     font-size: 24px;
     font-weight: normal;
+  }
+
+  nav li {
+    font-size: 15px;
+    margin: 5px;
   }
   .project-link,
   .launch-link {
