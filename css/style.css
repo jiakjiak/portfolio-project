@@ -168,7 +168,9 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
+nav a:hover {
+  color: #969696;
+}
 nav li.active a {
   color: var(--accent-color);
 }
