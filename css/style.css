@@ -72,6 +72,12 @@ p {
   font-size: 24px;
 }
 
+.launch-link {
+  color: var(--accent-color);
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+}
+
 .card-content {
   border: 1px solid #fff;
   box-shadow: var(--box-shadow);
@@ -89,16 +95,17 @@ p {
 }
 
 .back-to-top {
-  color: var(--secondary-color);
-  font-size: 30px;
+  color: #141a1c;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   text-decoration: none;
 }
 
-.back-to-top:hover {
-  color: var(--primary-color);
+.back-to-top:hover,
+.contact-email:hover {
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 .title {
@@ -170,10 +177,30 @@ nav a {
 
 nav a:hover {
   color: #969696;
+  transition: all 100ms ease-in-out;
 }
 nav li.active a {
   color: var(--accent-color);
 }
+
+.contact-icon {
+  font-size: 30px;
+  color: #141a1c;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.contact-icon:hover {
+  color: var(--accent-color);
+  opacity: 0.8;
+  transition: all 100ms ease-in-out;
+}
+
+.contact-email {
+  color: #141a1c;
+}
+
 @media (max-width: 576px) {
   h1,
   .title {
@@ -210,7 +237,7 @@ nav li.active a {
   }
 
   .profile-picture {
-    margin-top: 60px;
+    border-radius: 10px;
   }
 
   .icons {
@@ -222,10 +249,6 @@ nav li.active a {
     font-size: 20px;
     margin-top: -70px;
   }
-}
-
-.contact-icon {
-  font-size: 30px;
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
